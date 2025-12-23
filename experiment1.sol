@@ -2,17 +2,17 @@
 pragma solidity ^0.8.30;
 
 contract MemoryVsStorage {
-    string public message = "Hello";
+    string public message = "not modified";
 
-    // Modifies memory copy (does NOT change storage)
+    // Modifies memory copy (dont change storage)
     function modifyMemory() public view returns (string memory) {
-        string memory temp = message; // copy storage to memory
-        temp = "Modified";            // modifies memory only
-        return temp;                  // returns "Modified"
+        string memory temp = message; 
+        temp = "Modified";            
+        return temp;                  
     }
 
     // Modifies storage variable (changes storage)
     function modifyStorage() public {
-        message = "Modified";         // directly modifies storage
+        message = "Modified";        
     }
 }

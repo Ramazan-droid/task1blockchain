@@ -7,7 +7,7 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "message",
+				"name": "externalFunction",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -20,7 +20,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "modifyMemory",
+				"name": "publicFunction",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -33,9 +33,15 @@
 			},
 			{
 				"inputs": [],
-				"name": "modifyStorage",
-				"outputs": [],
-				"stateMutability": "nonpayable",
+				"name": "testCalls",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -52,7 +58,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"experiment1.sol": "MemoryVsStorage"
+			"experiment2.sol": "FunctionVisibility"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -66,12 +72,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"experiment1.sol": {
-			"keccak256": "0x6971c36b507b674561659a40a0b76adcb4481bdada6c4084f8bf312171b5dd80",
+		"experiment2.sol": {
+			"keccak256": "0x2bc3424a492fa7342c1091c373e133e01e53f360fca6de0c0f350025a95cc177",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3166baa28136768f96abc43be593dcaf782eae9ffcfc5512fe1b702fca4c1c3c",
-				"dweb:/ipfs/Qmac6Ho2V5GQxZXojE2SazBowG6bz4qPB4Q7Wy7xP2P2Ak"
+				"bzz-raw://6647242eb02e3ae67e0ee9e3190c13eb7a1cf541614456ad551042b8af6f6158",
+				"dweb:/ipfs/QmdESKi5D6VgFG757kCVSYZUhP3PwBWLRisW9r4wRCqaLS"
 			]
 		}
 	},
